@@ -23,7 +23,14 @@ git clone <repo-url>
 ```
 
 ### Checking the status of our files
-To check the staus of your files, you use command `git status`, this will showyou if your files are untracked, stages and ready for committing
+To check the staus of your files, you use command `git status`, this will show you if your files are untracked, stages and ready for committing
 ```sh
 git status
 ```
+
+### Commiting of the files
+To commit all files we use the command `git commit`, it will commit your files to github.
+```sh
+git commit -m "commit to you"
+```
+ 
