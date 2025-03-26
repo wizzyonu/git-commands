@@ -2,7 +2,7 @@
 Git is an open surce distrinted version control system.
 
 ## The stages of git
-https://www.google.com/imgres?q=tell%20me%20about%20git&imgurl=https%3A%2F%2Fwww.simplilearn.com%2Fice9%2Ffree_resources_article_thumb%2Fbusiness.JPG&imgrefurl=https%3A%2F%2Fwww.simplilearn.com%2Ftutorials%2Fgit-tutorial%2Fwhat-is-git&docid=4dCPYscVJt2OeM&tbnid=Nm3MnwmzCh74XM&vet=12ahUKEwjIg-7bsaWMAxXcSkEAHWiXGFYQM3oECGUQAA..i&w=567&h=369&hcb=2&ved=2ahUKEwjIg-7bsaWMAxXcSkEAHWiXGFYQM3oECGUQAA
+https://tinyurl.com/2j8w5e6h
 
 - The Workspace : This is where unstaged files are located
 - The Staging Area : This is where files go to after they have been staged
@@ -31,6 +31,52 @@ git status
 ### Commiting of the files
 To commit all files we use the command `git commit`, it will commit your files to github.
 ```sh
-git commit -m "commit to you"
+git commit -m "commit to the website"
 ```
+### Connecting to a Remote Repo
+- `git remote add origin <repository-url>`: Connects your local repository to a remote repository. You only need to do this once per project.
+
+```sh
+git remote add origin https://github.com/username/repository-name.git
+```
+### Pushing Changes
+- `git push -u origin <branch-name>`: Uploads your commits from your local repository to the remote repository. The `-u` flag sets the upstream branch, so you only need to use it the first time you push a branch.
+
+```sh
+git push -u origin main # Push the 'main' branch to the remote repository
+```
+**Note:**
+ - The branch name is usually `main` or `master`.
+ - The `origin` is the name of the remote repository.
+
+###  Pulling Changes
+- `git pull origin <branch-name>`: Downloads changes from the remote repository and merges them into your local branch.
+
+```sh
+ git pull origin main # Pull the 'main' branch from the remote repository
+ ```
+
+### Branching
+- `git branch`: List all the branches in your local repository.
+```sh
+git branch
+```
+- `git branch <branch-name>`: Create a new branch.
+ ```sh
+git branch feature/new-login
+```
+- `git checkout <branch-name>`: Switch to a different branch.
+```sh
+git checkout feature/new-login
+```
+- `git checkout -b <branch-name>`: Create and switch to a new branch.
+```sh
+git checkout -b feature/new-login
+```
+- `git merge <branch-name>`: Merge a branch into the current branch.
+```sh
+git merge feature/new-login
+```
+
+
  
