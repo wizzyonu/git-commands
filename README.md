@@ -1,6 +1,14 @@
 # Git Commands
 Git is an open surce distrinted version control system.
 
+## Table of content
+- [The Stages of git](The-Stages-of-git)
+- [The Commands](The=Commands)
+- [Initializing a Repo](Initializing-a-Repo)
+- [Checking the status of our files](Checking-the-status-of-our-files)
+
+
+
 ## The stages of git
 https://tinyurl.com/2j8w5e6h
 
